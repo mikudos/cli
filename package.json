@@ -1,6 +1,6 @@
 {
     "name": "@mikudos/cli",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Command-line Mikudos generator",
     "main": "lib/",
     "bin": {
@@ -32,6 +32,9 @@
         "access": "public"
     },
     "homepage": "https://github.com/mikudos/cli#readme",
+    "engines": {
+        "node": "^12.0.0"
+    },
     "dependencies": {
         "generator-mikudos": "^1.0.2",
         "commander": "^4.0.0",
