@@ -1,0 +1,42 @@
+{
+    "name": "@mikudos/cli",
+    "version": "0.0.1",
+    "description": "Command-line Mikudos generator",
+    "main": "lib/",
+    "scripts": {
+        "test": "mocha --opts",
+        "compile": "shx rm -rf lib/ && tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mikudos/cli.git"
+    },
+    "keywords": [
+        "mikudos",
+        "node",
+        "cli"
+    ],
+    "author": "Mikudos contributors",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mikudos/cli/issues"
+    },
+    "homepage": "https://github.com/mikudos/cli#readme",
+    "dependencies": {
+        "generator-mikudos": "^1.0.2",
+        "commander": "^4.0.0",
+        "semver": "^6.3.0",
+        "update-notifier": "^3.0.1",
+        "yeoman-environment": "^2.4.0"
+    },
+    "devDependencies": {
+        "@types/commander": "^2.12.2",
+        "@types/lodash": "^4.14.149",
+        "@types/node": "^12.12.3",
+        "grpc": "^1.24.2",
+        "mocha": "^6.2.2",
+        "shx": "^0.3.2",
+        "ts-mocha": "^6.0.0",
+        "typescript": "^3.5.3"
+    }
+}
