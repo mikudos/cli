@@ -1,6 +1,6 @@
 {
     "name": "@mikudos/cli",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Command-line Mikudos generator",
     "main": "lib/",
     "bin": {

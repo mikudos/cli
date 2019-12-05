@@ -5,7 +5,7 @@ import updateNotifier from 'update-notifier';
 
 const env = yeoman.createEnv();
 
-export default function(argv: string[], generatorOptions = {}) {
+export = function(argv: string[], generatorOptions = {}) {
     const pkg = require('../package.json');
     updateNotifier({ pkg }).notify();
 
@@ -21,4 +21,4 @@ export default function(argv: string[], generatorOptions = {}) {
         return process.exit(1);
     }
     console.log('TCL: argv', argv);
-}
+};
