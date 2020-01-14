@@ -36,8 +36,8 @@
         "node": "^12.0.0"
     },
     "dependencies": {
-        "generator-mikudos": "^1.0.2",
         "commander": "^4.0.0",
+        "generator-mikudos": "^1.0.8",
         "semver": "^6.3.0",
         "update-notifier": "^3.0.1",
         "yeoman-environment": "^2.4.0"
@@ -45,7 +45,7 @@
     "devDependencies": {
         "@types/commander": "^2.12.2",
         "@types/lodash": "^4.14.149",
-        "@types/node": "^12.12.3",
+        "@types/node": "^12.12.24",
         "@types/semver": "^6.2.0",
         "@types/update-notifier": "^2.5.0",
         "@types/yeoman-environment": "^2.3.2",

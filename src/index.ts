@@ -1,18 +1,31 @@
-import commander from 'commander';
 import yeoman from 'yeoman-environment';
+import program from 'commander';
+const meta = require('generator-mikudos/meta');
 import semver from 'semver';
 import updateNotifier from 'update-notifier';
 
 const env = yeoman.createEnv();
 
-export = function(argv: string[], generatorOptions = {}) {
+const mikudosGenerators = 'generator-mikudos/generators';
+
+Object.keys(meta).forEach(name => {
+    if (name === 'project') name = 'app';
+    env.register(
+        require.resolve(`${mikudosGenerators}/${name}`),
+        `mikudos:${name}`
+    );
+});
+
+export = function(argv: string[], generatorOptions: any = {}) {
     const pkg = require('../package.json');
+    let description = 'Run a generator. Type can be\n';
+
+    Object.keys(meta).forEach(name => {
+        description += `\t• ${name} - ${(meta as any)[name]}\n`;
+    });
     updateNotifier({ pkg }).notify();
 
-    commander
-        .version(pkg.version)
-        .usage('upgrade <version>')
-        .usage('generate [type]');
+    program.version(pkg.version).usage('generate [type]');
 
     if (!semver.satisfies(process.version, '>= 12.0.0')) {
         console.error(
@@ -21,4 +34,28 @@ export = function(argv: string[], generatorOptions = {}) {
         return process.exit(1);
     }
     console.log('TCL: argv', argv);
+    console.log('TCL: env', env);
+    program
+        .command('generate [type]')
+        .alias('g')
+        .description(description)
+        .action(type => {
+            if (!type) {
+                program.help();
+            } else {
+                console.log('generate');
+                switch (type) {
+                    case 'project':
+                        console.log('generate project');
+                        env.run(
+                            `mikudos:app`,
+                            Object.assign({ name: type }, generatorOptions)
+                        );
+                        break;
+                    default:
+                        env.run(`mikudos:${type}`, generatorOptions);
+                        break;
+                }
+            }
+        });
 };
