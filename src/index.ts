@@ -33,8 +33,8 @@ export = function(argv: string[], generatorOptions: any = {}) {
         );
         return process.exit(1);
     }
-    console.log('TCL: argv', argv);
-    console.log('TCL: env', env);
+    // console.log('TCL: argv', argv);
+    // console.log('TCL: env', env);
     program
         .command('generate [type]')
         .alias('g')
@@ -43,10 +43,8 @@ export = function(argv: string[], generatorOptions: any = {}) {
             if (!type) {
                 program.help();
             } else {
-                console.log('generate');
                 switch (type) {
                     case 'project':
-                        console.log('generate project');
                         env.run(
                             `mikudos:app`,
                             Object.assign({ name: type }, generatorOptions)
@@ -58,4 +56,11 @@ export = function(argv: string[], generatorOptions: any = {}) {
                 }
             }
         });
+
+    program.command('*').action(() => program.help());
+    program.parse(argv);
+
+    if (argv.length === 2) {
+        program.help();
+    }
 };
