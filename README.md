@@ -13,3 +13,66 @@
 ```bash
 npm install -g @mikudos/cli
 ```
+
+## Usage
+
+Check installation
+
+```bash
+mikudos --version
+```
+
+Get help
+
+```bash
+mikudos --help
+```
+
+Create a directory for your new mikudos project.
+
+```bash
+mkdir my-new-project; cd my-new-project/
+```
+
+Generate your project.
+
+```bash
+mikudos generate project
+```
+
+Generate your protos project for centralised proto file management as services description.
+
+```bash
+mikudos generate protos
+```
+
+Generate your micro service based on one proto file.
+
+```bash
+mikudos generate app
+```
+
+or generate language spicified service project
+
+```bash
+mikudos generate golang_app
+mikudos generate ts_app
+mikudos generate node_app
+mikudos generate python_app
+mikudos generate python_ai
+```
+
+Generate your mikudos plugin project
+
+```bash
+mikudos generate rbac
+mikudos generate schedule
+mikudos generate eventAggregate
+mikudos generate messagePusher
+```
+
+Generate your Gate service
+
+```bash
+mikudos generate message
+```
