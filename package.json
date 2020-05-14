@@ -1,6 +1,6 @@
 {
     "name": "@mikudos/cli",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Command-line Mikudos generator",
     "main": "lib/",
     "bin": {
@@ -37,7 +37,7 @@
     },
     "dependencies": {
         "commander": "^4.0.0",
-        "generator-mikudos": "^1.0.8",
+        "generator-mikudos": "^1.0.11",
         "semver": "^6.3.0",
         "update-notifier": "^3.0.1",
         "yeoman-environment": "^2.4.0"
