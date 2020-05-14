@@ -8,6 +8,6 @@ export = {
     eventAggregate:
         'Create a Mikudos eventAggregate service in the current folder',
     schedule: 'Create a Mikudos schedule service within your project',
-    message: 'Create a Mikudos message service within your project',
-    rbac: 'Create a Mikudos RBAC service in the current folder'
+    gate: 'Create a Mikudos gate server within your project',
+    rbac: 'Create a Mikudos RBAC service in the current folder',
 };

@@ -8,7 +8,7 @@ const env = yeoman.createEnv();
 
 const mikudosGenerators = 'generator-mikudos/generators';
 
-Object.keys(meta).forEach(name => {
+Object.keys(meta).forEach((name) => {
     if (name === 'project') name = 'app';
     env.register(
         require.resolve(`${mikudosGenerators}/${name}`),
@@ -16,11 +16,11 @@ Object.keys(meta).forEach(name => {
     );
 });
 
-export = function(argv: string[], generatorOptions: any = {}) {
+export = function (argv: string[], generatorOptions: any = {}) {
     const pkg = require('../package.json');
     let description = 'Run a generator. Type can be\n';
 
-    Object.keys(meta).forEach(name => {
+    Object.keys(meta).forEach((name) => {
         description += `\t• ${name} - ${(meta as any)[name]}\n`;
     });
     updateNotifier({ pkg }).notify();
@@ -39,7 +39,7 @@ export = function(argv: string[], generatorOptions: any = {}) {
         .command('generate [type]')
         .alias('g')
         .description(description)
-        .action(type => {
+        .action((type) => {
             if (!type) {
                 program.help();
             } else {

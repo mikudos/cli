@@ -2156,10 +2156,10 @@ function-bind@^1.1.1:
   resolved "https://registry.npm.taobao.org/function-bind/download/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
 
-generator-mikudos@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.npm.taobao.org/generator-mikudos/download/generator-mikudos-1.0.11.tgz#7e6bb517f1cf8bab56ddae9a49e4c189b99cfa43"
-  integrity sha1-fmu1F/HPi6tW3a6aSeTBibmc+kM=
+generator-mikudos@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.npm.taobao.org/generator-mikudos/download/generator-mikudos-1.0.12.tgz?cache=0&sync_timestamp=1589429114687&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgenerator-mikudos%2Fdownload%2Fgenerator-mikudos-1.0.12.tgz#81dac10195cc51babc3f9cba64e3d4a293b00f3d"
+  integrity sha1-gdrBAZXMUbq8P5y6ZOPUopOwDz0=
   dependencies:
     "@grpc/grpc-js" "^0.6.7"
     "@grpc/proto-loader" "^0.5.2"
