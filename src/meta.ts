@@ -7,6 +7,8 @@ export = {
     deployment: 'Create a Mikudos deployment template in the current folder',
     eventAggregate:
         'Create a Mikudos eventAggregate service in the current folder',
+    message_pusher:
+        'Create a Mikudos message_pusher service in the current folder',
     schedule: 'Create a Mikudos schedule service within your project',
     gate: 'Create a Mikudos gate server within your project',
     rbac: 'Create a Mikudos RBAC service in the current folder',
