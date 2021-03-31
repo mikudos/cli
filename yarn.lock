@@ -2156,10 +2156,10 @@ function-bind@^1.1.1:
   resolved "https://registry.npm.taobao.org/function-bind/download/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
 
-generator-mikudos@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.npm.taobao.org/generator-mikudos/download/generator-mikudos-1.0.12.tgz?cache=0&sync_timestamp=1589429114687&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgenerator-mikudos%2Fdownload%2Fgenerator-mikudos-1.0.12.tgz#81dac10195cc51babc3f9cba64e3d4a293b00f3d"
-  integrity sha1-gdrBAZXMUbq8P5y6ZOPUopOwDz0=
+generator-mikudos@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/generator-mikudos/-/generator-mikudos-1.0.16.tgz#f94b41943f5584f9fb1df36601537667e1ada397"
+  integrity sha512-y8HtVdZ1vxEY9OYkrArsBuLLs5P094CsZQjaV5Z2gWP231iaUAgru6QauXS9Lu2WSIgIXgFLSgyKSEpgG/PDeg==
   dependencies:
     "@grpc/grpc-js" "^0.6.7"
     "@grpc/proto-loader" "^0.5.2"
@@ -4775,9 +4775,9 @@ xtend@~4.0.1:
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
 
 y18n@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npm.taobao.org/y18n/download/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
-  integrity sha1-le+U+F7MgdAHwmThkKEg8KPIVms=
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.1.tgz#8db2b83c31c5d75099bb890b23f3094891e247d4"
+  integrity sha512-wNcy4NvjMYL8gogWWYAO7ZFWFfHcbdbE57tZO8e4cbpj8tfUcwrwqSl3ad8HxpYWCdXcJUCeKKZS62Av1affwQ==
 
 yallist@^2.1.2:
   version "2.1.2"
