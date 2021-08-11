@@ -2156,10 +2156,10 @@ function-bind@^1.1.1:
   resolved "https://registry.npm.taobao.org/function-bind/download/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
 
-generator-mikudos@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.npm.taobao.org/generator-mikudos/download/generator-mikudos-1.0.12.tgz?cache=0&sync_timestamp=1589429114687&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgenerator-mikudos%2Fdownload%2Fgenerator-mikudos-1.0.12.tgz#81dac10195cc51babc3f9cba64e3d4a293b00f3d"
-  integrity sha1-gdrBAZXMUbq8P5y6ZOPUopOwDz0=
+generator-mikudos@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/generator-mikudos/-/generator-mikudos-1.0.16.tgz#f94b41943f5584f9fb1df36601537667e1ada397"
+  integrity sha512-y8HtVdZ1vxEY9OYkrArsBuLLs5P094CsZQjaV5Z2gWP231iaUAgru6QauXS9Lu2WSIgIXgFLSgyKSEpgG/PDeg==
   dependencies:
     "@grpc/grpc-js" "^0.6.7"
     "@grpc/proto-loader" "^0.5.2"
@@ -3537,9 +3537,9 @@ path-key@^3.0.0, path-key@^3.1.0:
   integrity sha1-WB9q3mWMu6ZaDTOA3ndTKVBU83U=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-type@^3.0.0:
   version "3.0.0"
