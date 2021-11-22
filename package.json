@@ -33,11 +33,11 @@
     },
     "homepage": "https://github.com/mikudos/cli#readme",
     "engines": {
-        "node": "^12.0.0"
+        "node": ">=12.0.0"
     },
     "dependencies": {
         "commander": "^4.0.0",
-        "generator-mikudos": "^1.0.16",
+        "generator-mikudos": "^1.0.20",
         "semver": "^6.3.0",
         "update-notifier": "^3.0.1",
         "yeoman-environment": "^2.4.0"

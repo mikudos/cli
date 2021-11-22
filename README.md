@@ -60,6 +60,10 @@ mikudos generate ts_app
 mikudos generate node_app
 mikudos generate python_app
 mikudos generate python_ai
+mikudos generate cpp_app
+mikudos generate cs_app
+mikudos generate java_app
+mikudos generate ruby_app
 ```
 
 Generate your mikudos plugin project
@@ -74,5 +78,5 @@ mikudos generate messagePusher
 Generate your Gate service
 
 ```bash
-mikudos generate message
+mikudos generate gate
 ```
