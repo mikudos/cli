@@ -1,3 +1,8 @@
+# npm lock
+package-lock.json
+# yarn lock
+yarn.lock
+
 # Logs
 logs
 *.log
